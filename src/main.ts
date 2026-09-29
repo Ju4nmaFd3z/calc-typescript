@@ -9,7 +9,7 @@ let shouldResetInput = false;
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+  document.querySelector<HTMLDivElement>('#calc')!.innerHTML = `
     <div>
       <h1>Calculadora</h1>
       <h2>Proximamente...</h2>
@@ -205,4 +205,3 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
 });
-
