@@ -12,5 +12,8 @@
     "lite-server": "^2.6.1",
     "typescript": "~5.9.3",
     "vite": "^7.3.6"
+  },
+  "dependencies": {
+    "rxjs": "^7.8.2"
   }
 }
