@@ -5,9 +5,10 @@ export class Calculator {
   private reset = false
   private display: HTMLInputElement
 
-  constructor(root: HTMLElement) {
+  constructor(root: HTMLElement, title: string) {
     root.innerHTML = `
       <div class="calculadora">
+        <h3>${title}</h3>
         <div class="display">
           <input type="text" class="display-input" value="0" disabled />
         </div>

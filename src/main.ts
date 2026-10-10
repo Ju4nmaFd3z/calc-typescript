@@ -6,8 +6,9 @@ import { Temporizer } from './temporizer'
 
 // Calculadoras
 
-new Calculator(document.querySelector<HTMLElement>('#calc1')!)
-new Calculator(document.querySelector<HTMLElement>('#calc2')!)
+new Calculator(document.querySelector<HTMLElement>('#calc1')!, 'La Niña')
+new Calculator(document.querySelector<HTMLElement>('#calc2')!, 'La Pinta')
+new Calculator(document.querySelector<HTMLElement>('#calc3')!, 'La Santa María')
 
 // Herramientas
 
