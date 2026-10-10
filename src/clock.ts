@@ -6,9 +6,9 @@ export class Clock {
 
   constructor(root: HTMLElement) {
     root.innerHTML = `
-      <div class="reloj">
+      <div class="reloj calculadora">
         <h3>Reloj</h3>
-        <div class="botones">
+        <div class="botones teclado">
           <button class="start">Start</button>
           <button class="stop">Stop</button>
         </div>

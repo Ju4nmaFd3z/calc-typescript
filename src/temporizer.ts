@@ -8,15 +8,15 @@ export class Temporizer {
 
   constructor(root: HTMLElement) {
     root.innerHTML = `
-      <div class="temporizador">
+      <div class="temporizador calculadora">
         <h3>Temporizador</h3>
-        <div class="botones">
+        <div class="botones teclado">
           <button class="start">Start</button>
           <button class="stop">Stop</button>
           <button class="reset">Reset</button>
         </div>
-        <div class="input">
-          <input type="text" class="input-seconds" placeholder="Segundos" />
+        <div class="display">
+          <input type="text" class="display-input input-seconds" placeholder="Segundos" />
         </div>
         <div class="display">
           <input type="text" class="display-input" value="0" disabled />
@@ -24,7 +24,7 @@ export class Temporizer {
       </div>`
 
     this.input = root.querySelector('.input-seconds')!
-    this.display = root.querySelector('.display-input')!
+    this.display = root.querySelector('.display-input:disabled')!
     root.querySelector('.start')!.addEventListener('click', () => this.start())
     root.querySelector('.stop')!.addEventListener('click', () => this.stop())
     root.querySelector('.reset')!.addEventListener('click', () => this.reset())

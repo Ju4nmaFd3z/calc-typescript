@@ -7,9 +7,9 @@ export class Chronometer {
 
   constructor(root: HTMLElement) {
     root.innerHTML = `
-      <div class="cronometro">
+      <div class="cronometro calculadora">
         <h3>Cronómetro</h3>
-        <div class="botones">
+        <div class="botones teclado">
           <button class="start">Start</button>
           <button class="stop">Stop</button>
           <button class="reset">Reset</button>
